@@ -1,18 +1,29 @@
 {
   "name": "Trello Report Power-Up",
-  "description": "Создание отчета с выбором даты",
+  "description": "Создание отчётов из Trello с выбором даты",
   "author": "Sarkushev",
-  "icon": {
-    "url": "https://raw.githubusercontent.com/Sarkushev/trello-powerup/main/icon.png",
-    "backup": "https://trello.com"
-  },
   "capabilities": {
-    "board-buttons": [{
-      "text": "Создать отчет",
-      "callback": {
-        "url": "https://sarkushev.github.io/trello-powerup/report.html",
-        "target": "overlay"
+    "board-buttons": [
+      {
+        "text": "Создать отчёт",
+        "callback": "openReport"
       }
-    }]
-  }
+    ]
+  },
+  "url": "https://sarkushev.github.io/trello-powerup/",
+  "icon": {
+    "url": "https://sarkushev.github.io/trello-powerup/icon.png",
+    "width": 64,
+    "height": 64
+  },
+  "connectors": {
+    "iframe": {
+      "url": "https://sarkushev.github.io/trello-powerup/",
+      "height": 600
+    }
+  },
+  "iframeConnector": {
+    "url": "https://sarkushev.github.io/trello-powerup/"
+  },
+  "version": "1.0"
 }
